@@ -1,0 +1,15 @@
+.submitCard{
+  width: 400px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  & input{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: darkgrey;
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+  }
+}

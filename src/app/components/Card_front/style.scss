@@ -1,0 +1,70 @@
+.card_front{
+  width: 400px;
+  height: 250px;
+  background-color: #2F4F4F;
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  & h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  & h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .number {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    & input{
+      width: 80%;
+      height: 25px;
+      text-align: center;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .expirationDate {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
+    & h5 {
+      margin: 0;
+    }
+
+    & select {
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      font-weight: 700;
+      height: 35px;
+      text-align: center;
+
+      &[name='year']{
+        width: 30%;
+      }
+      &[name='month']{
+        width: 20%;
+        margin-right: 15px;
+      }
+    }
+  }
+}
